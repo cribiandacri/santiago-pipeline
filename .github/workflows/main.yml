@@ -1,16 +1,14 @@
- name: Build and Deploy
-
+name: Build and Deploy
 on:
   push:
     branches:
-      - main
-
+      - developer
 jobs:
  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: santi
+      - name: Installing Node js 
         uses: actions/checkout@v2
 
       - name: Setup Node.js
